@@ -20,8 +20,6 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 # STATIC_DIR = Path(BASE_DIR, 'static')
 
-print(Template_2)
-print(static_2)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
