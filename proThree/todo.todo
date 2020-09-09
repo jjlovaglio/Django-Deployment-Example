@@ -1,0 +1,8 @@
+
+
+✔ change the /user route to render a sign up html page @done (9/8/2020, 6:01:41 PM)
+
+✔ this form is connected to the User model via form.ModelForm @done (9/8/2020, 6:02:02 PM)
+
+✔ user signs up and is taken back to the home page @done (9/8/2020, 6:13:53 PM)
+

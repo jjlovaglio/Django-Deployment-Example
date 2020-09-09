@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}" />
+    <title>Signup</title>
+
+</head>
+<body>
+    <h1>Sign Up page</h1>
+    <form action="/users/" method="POST">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit"name="submit"/>
+
+    </form>
+    <!--div>
+        {% if user_records %}
+        <table>
+            <thead>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </thead>
+        {% for record in user_records %}
+            <tr>
+                <td>{{record.first_name}}</td>
+                <td>{{record.last_name}}</td>
+                <td>{{record.email}}</td>
+            </tr>
+        {% endfor %}
+        </table>
+        {% else %}
+        <p>no records of users exist yet!</p>
+        {% endif %}
+    </div-->
+</body>
+</html>
